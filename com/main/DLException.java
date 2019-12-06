@@ -19,6 +19,7 @@ public class DLException extends Exception {
 			writeLog(e, values);
 		} catch (IOException e1) {
 			System.out.println("There was an error completing an operation.");
+			System.out.println("----------------------------------------------------");
 		}
 	}
 

@@ -60,7 +60,9 @@ public class Backup {
 			final ResultSet rs = stmnt.executeQuery(SHOW_QUERY);
 			while (rs.next()) {
 				tableNames.add(rs.getString(1));
-				tableNames.add(rs.getString(2));
+				if (tableName != null) {
+					tableNames.add(rs.getString(2));
+				}
 			}
 		} catch (SQLException e) {
 			try {
