@@ -40,7 +40,6 @@ public class Main {
 	 * Fetch and log table names
 	 */
 	private static void logTableNames() {
-		
 		// fetch table names and
 		// format console output
 		ArrayList<String> tableNames = backup.fetchTable(null);
@@ -48,7 +47,7 @@ public class Main {
 		System.out.println("----------------------------------------------------");
 		
 		for (String name : tableNames) {
-			// print out table name
+			// print table name to console
 			System.out.println(name);
 		}
 	}
@@ -57,7 +56,7 @@ public class Main {
 	 * Check if table exists
 	 * 
 	 * @param tableData
-	 * @return
+	 * @return string array list
 	 */
 	public static ArrayList<String> tableExists(ArrayList<String> tableData) {
 
@@ -66,7 +65,9 @@ public class Main {
 		
 		// check if queried table exists
 		if (tableData.size() > 0) {
+			// log show create table results
 			System.out.println(tableData.get(1));
+			
 			// log table names
 			logTableNames();
 			

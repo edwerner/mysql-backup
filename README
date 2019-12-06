@@ -1,0 +1,12 @@
+Project created in Eclipse
+
+Running the program
+===================
+
+Add MySQL jars to Java build path
+
+Right-click on Main.java and select `Run As > Java Application`
+
+Enter valid table name into console
+
+All MySQL errors are logged to `ErrorLog.txt`
