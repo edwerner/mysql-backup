@@ -25,7 +25,7 @@ public class Backup {
 	public Backup() {
 		url = "jdbc:mysql://localhost:3306/travel?useSSL=false";
 		username = "root";
-		password = "Gv3rn1ca";
+		password = "student";
 	}
 
 	/**
